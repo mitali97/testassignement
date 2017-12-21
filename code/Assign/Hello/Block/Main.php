@@ -9,6 +9,7 @@ class Main extends \Magento\Framework\View\Element\Template
     {
         parent::__construct($context);
     }
+    /*block*/
     protected function _prepareLayout()
     {
          
