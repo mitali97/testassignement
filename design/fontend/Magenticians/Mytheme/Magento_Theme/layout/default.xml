@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<body>
+<referenceBlock name="logo">
+<arguments>
+<argument name="logo_file" xsi:type="string">images/logo.png</argument>
+<!-- <argument name="logo_file" xsi:type="number">300</argument>
+<argument name="logo_file" xsi:type="number">300</argument> -->
+</arguments>
+</referenceBlock>
+<referenceContainer name="footer-container">
+<block class="Magento\Customer\Block\Form\Login" name="custom_customer_form_login" template="Magento_Theme::form/login.phtml" />
+</referenceContainer>
+<remove name="report.bugs"/>
+</body>
+</page>
