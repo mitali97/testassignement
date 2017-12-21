@@ -30,7 +30,7 @@
                 type: 'popup',
                 responsive: true,
                 innerScroll: true,
-                title: 'NewsLetter',
+                title: 'Sign in',
                 buttons: [{
                     text: $.mage.__('Continue'),
                     class: '',
@@ -42,6 +42,7 @@
 
             var popup = modal(options, $('#popup-mpdal'));
             $(".authorization-link").on('click',function(){ 
+                event.preventDefault();
                // $(window).load(function(){      
                 $("#popup-mpdal").modal("openModal");
             });
